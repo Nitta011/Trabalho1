@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Trabalho de Git</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Alterna navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="/Trabalho1/index.html"
+              >Respostas<span class="sr-only">(Página atual)</span></a
+            >
+            <a class="nav-item nav-link" href="/Trabalho1/comando.html">Comandos</a>
+            <a class="nav-item nav-link" href="#">Finalidades</a>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section id="foto">
+      <div class="container">
+        <div class="col-md-6"></div>
+        <div class="col-md-6 text-center">
+          <img src="src/aa.png.png" class="img-fluid" />
+        </div>
+      </div>
+    </section>
+    <section id="respostas">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Quando utilizar o git flow?</h4>
+            <p>
+              O Git Flow é recomendado para projetos que utilizam versionamento
+              semântico (semantic versioning) ou que precisam oferecer suporte a
+              várias versões de seu software.
+            </p>
+            <br />
+            <p>
+              A utilização do Git Flow também se torna recomendado para projetos
+              que existam uma grande quantidade de pessoas “commitando” dentro
+              de um repositório, ou para projetos que possuem um ciclo de
+              entrega agendada. Se você utiliza o Git como ferramenta de
+              controle de versão para seus softwares, provavelmente já deve ter
+              observado as várias maneiras de como controlar branches de
+              repositórios. É corriqueiro pessoas utilizarem apenas uma branch
+              para fazer commits em projetos pessoais, o que não é errado, pois
+              quando estamos trabalhando sozinhos é muito tranquilo de se
+              controlar tudo em um branch só. Entretanto, o cenário se torna
+              totalmente diferente e mais complexo quando estamos trabalhando
+              com mais contribuidores em um projeto.
+            </p>
+            <br />
+            <p>
+              Em todo projeto real, é importantíssimo que se tenha controle
+              total do que está sendo produzido por uma equipe de pessoas
+              desenvolvedoras, onde, ao mesmo tempo, são feitas muitas coisas,
+              como: implementação de novas funcionalidades, correção de falhas,
+              lançamento de versões, etc. E é justamente aqui, que o Git Flow
+              entra para nos ajudar, facilitando o desenvolvimento compartilhado
+              de código com pessoas desenvolvedoras. Ao utilizar o Git para
+              gerenciar versões de um projeto, é de suma importância definir o
+              fluxo de trabalho (workflow), que irá estabelecer funções
+              específicas para diferentes branches e definir quando elas devem
+              interagir.
+            </p>
+            <br />
+            <h4>Como ele funciona?</h4>
+            <p>
+              O Git Flow trabalha com duas branches principais, a Develop e a
+              Master, que duram para sempre; e três branches de suporte,
+              Feature, Release e Hotfix, que são temporários e duram até
+              realizar o merge com as branches principais.
+            </p>
+            <br />
+            <p>
+              Então, ao invés de uma única branch Master, esse fluxo de trabalho
+              utiliza duas branches principais para registrar o histórico do
+              projeto. A branch Master armazena o histórico do lançamento
+              oficial, e a branch Develop serve como uma ramificação de
+              integração para recursos.
+            </p>
+            <br />
+            <p>
+              Branch Master/Main Principal branch, aqui é onde temos todo o
+              código de produção. Todas as novas funcionalidades que estão sendo
+              desenvolvidas, em algum momento, serão mescladas ou associadas a
+              Master. As formas de interagir com essa branch são através de uma
+              Hotfix ou de uma nova Release.
+            </p>
+            <br />
+            <p>
+              Branch Develop É a branch onde fica o código do próximo deploy.
+              Ela serve como uma linha do tempo com os últimos desenvolvimentos,
+              isso significa que ela possui funcionalidades que ainda não foram
+              publicadas e que posteriormente vão ser associadas com a branch
+              Master.
+            </p>
+            <br />
+            <p>
+              Branch Feature São branches utilizadas para o desenvolvimento de
+              funcionalidades específicas. É recomendável que essas branches
+              sigam uma convenção de nome, a convenção mais utilizada é iniciar
+              o nome das branches com feature, por exemplo,
+              “feature/alura-forum”. É importante saber que essas features
+              branches são criadas sempre a partir da branch Develop. Portanto,
+              quando finalizada, elas são removidas após realizar o merge com a
+              Branch Develop. Se tivermos dez funcionalidades a serem
+              desenvolvidas, criaremos dez branches independentes. É importante
+              salientar que as branches de features não podem ter interação com
+              a branch master, apenas com a branch develop.
+            </p>
+            <br />
+            <p>
+              Branch Hotfix É uma branch criada a partir da master para realizar
+              correções imediatas encontradas no sistema em produção. Quando
+              concluída, ela é excluída após realizar o merge com as branches
+              Master e Develop.
+            </p>
+            <br />
+            <p>
+              Além disso, quando fechamos um Hotfix Branch, temos que criar uma
+              tag com a nova versão do projeto. Isso porque cada mudança que
+              fazemos na Branch Master precisa de uma tag que a represente.
+            </p>
+            <br />
+            <p>
+              Branch Release Uma vez que uma etapa de desenvolvimento esteja
+              concluída, teremos em nossa Branch Develop todas as features e
+              Hotfix mesclados. Então, se quisermos ter todas essas novas
+              funcionalidades na Branch Master, teremos que criar uma Branch de
+              Release.
+            </p>
+            <br />
+            <p>
+              A Branch Release serve como ponte para fazer o merge da Develop
+              para a Master. Ela funciona como ambiente de homologação e é
+              removida após realizar os testes do merge com a Master. Caso seja
+              encontrado algum bug e haja alguma alteração, ela também deve ser
+              sincronizada com a Develop.
+            </p>
+            <br />
+            <p>
+              Por fim, quando fechamos uma Branch Release, temos que criar uma
+              tag com a nova versão de lançamento do software, para que possamos
+              ter um histórico completo do desenvolvimento.
+            </p>
+            <br />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
