@@ -6,11 +6,11 @@
 * Gustavo Françozo, RA: 00204376
 
 <h1> 1- O que é o Git? </h1>
-R: É um sistema de controle de versionamento open source 
+R: É um sistema de controle de versionamento open source.  
 <h1> 2-  O que é versionamento de software? </h1>
 R: É um processo onde se e atribuido versoes para indicar o estado do programa.
 <h1> 3- Por que utilizar o Git como controle de versionamento? </h1>
-R:O git registra as mudanças que ocorrem no código-fonte de um projeto. Logo, permite que os arquivos sejam alterados de forma simultânea
+R: O git registra as mudanças que ocorrem no código-fonte de um projeto. Logo, permite que os arquivos sejam alterados de forma simultânea.
 <h1> 4- Quais as vantagens do Git? </h1>
 R: O git é fácil de trabalhar, os repositórios são menores, tem a capacidade de mover ou adicionar arquivos, você pode ignorar certos arquivos e é possível criar várias branches, para facilitar o desenvolvimento do projeto.
 <h1> 5- Qual a importância da utilização do controle de versionamento no desenvolvimento de um software? </h1>
