@@ -1,6 +1,7 @@
 # Trabalho1
 <h1> Acadêmicos: </h1>
 * Gabriel Nitta, RA: 00212127
+
 * Gustavo Françozo, RA: 00204376
 
 <h1> 1- O que é o Git? </h1>
